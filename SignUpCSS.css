@@ -1,0 +1,443 @@
+.iphone-11-pro-x-signup1 {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 812px;
+  overflow: hidden;
+  padding: 74.9px 0;
+  width: 375px;
+}
+
+.iphone-11-pro-x-signup1 .image-4 {
+  height: 164px;
+  margin-right: 9.04px;
+  object-fit: cover;
+  width: 188px;
+}
+
+.iphone-11-pro-x-signup1 .text-1 {
+  height: 63px;
+  letter-spacing: -0.53px;
+  margin-left: 3px;
+  margin-top: 20px;
+  text-align: center;
+  width: 400px;
+}
+
+.iphone-11-pro-x-signup1 .span {
+  letter-spacing: -0.14px;
+}
+
+.iphone-11-pro-x-signup1 .overlap-group1 {
+  height: 27px;
+  margin-left: 1px;
+  margin-top: -5px;
+  position: relative;
+  width: 400px;
+}
+
+.iphone-11-pro-x-signup1 .rectangle-2 {
+  background-color: var(--peach);
+  height: 18px;
+  left: 67px;
+  position: absolute;
+  top: 2px;
+  width: 270px;
+}
+
+.iphone-11-pro-x-signup1 .text-2 {
+  height: 27px;
+  left: 0;
+  letter-spacing: -0.36px;
+  position: absolute;
+  text-align: center;
+  top: -2px;
+  width: 400px;
+}
+
+.iphone-11-pro-x-signup1 .image-5 {
+  cursor: pointer;
+  height: 74px;
+  margin-top: 6px;
+  width: 71px;
+}
+
+.iphone-11-pro-x-signup1 .text-4 {
+  height: 23px;
+  letter-spacing: -0.3px;
+  margin-left: 1px;
+  margin-top: 11px;
+  text-align: center;
+  text-decoration: underline;
+  width: 400px;
+}
+
+.iphone-11-pro-x-signup1 .overlap-group {
+  height: 22px;
+  margin-left: 1px;
+  margin-top: 22px;
+  position: relative;
+  width: 400px;
+}
+
+.iphone-11-pro-x-signup1 .rectangle-3 {
+  background-color: var(--peach);
+  height: 18px;
+  left: 69px;
+  position: absolute;
+  top: 1px;
+  width: 263px;
+}
+
+.iphone-11-pro-x-signup1 .text-3 {
+  height: 22px;
+  left: 0;
+  letter-spacing: -0.36px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 400px;
+}
+
+.iphone-11-pro-x-signup1 .iphone-11-pro-x-signup1-item {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 2px;
+  margin-top: 20px;
+  min-width: 317px;
+}
+
+.iphone-11-pro-x-signup1 .overlap-group3 {
+  align-items: flex-start;
+  background-color: var(--periwinkle-gray);
+  border-radius: 16px;
+  display: flex;
+  height: 27px;
+  justify-content: flex-end;
+  min-width: 315px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.iphone-11-pro-x-signup1 .mbti {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 18px;
+  letter-spacing: -0.3px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  padding: 0;
+  resize: none;
+  text-align: center;
+  width: 315px;
+}
+
+.iphone-11-pro-x-signup1 .mbti::placeholder {
+  color: #ffffff99;
+}
+
+.iphone-11-pro-x-signup1 .overlap-group2 {
+  margin-top: -10px;
+  border-radius: 16px;
+  height: 45px;
+  position: relative;
+  width: 315px;
+}
+
+.iphone-11-pro-x-signup1 .rectangle-3-1 {
+  background-color: #517bcc;
+  border-radius: 16px;
+  cursor: pointer;
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 315px;
+}
+
+.iphone-11-pro-x-signup1 .text-5 {
+  height: 18px;
+  left: 99px;
+  letter-spacing: -0.3px;
+  position: absolute;
+  text-align: center;
+  top: 13px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:700,500,600");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+:root {
+  --eerie-black: rgba(28, 28, 28, 1);
+  --onyx: rgba(58, 58, 58, 1);
+  --tundora: rgba(70, 70, 70, 1);
+  --abbey: rgba(77, 77, 77, 1);
+  --indigo-2: rgba(81, 123, 204, 0.502);
+  --indigo: rgba(81, 123, 204, 1);
+  --indigo-22: rgba(82, 101, 204, 1);
+  --fuscous-gray: rgba(84, 84, 84, 1);
+  --gray: rgba(128, 128, 128, 1);
+  --suva-gray: rgba(135, 135, 135, 1);
+  --star-dust-2: rgba(154, 154, 154, 1);
+  --star-dust: rgba(161, 161, 161, 1);
+  --quick-silver: rgba(163, 162, 168, 1);
+  --periwinkle-gray: rgba(188, 201, 225, 1);
+  --mystic: rgba(229, 235, 246, 1);
+  --peach: rgba(255, 234, 180, 1);
+  --white: rgba(255, 255, 255, 1);
+
+  --font-size-xs: 13px;
+  --font-size-s: 14px;
+  --font-size-m: 15px;
+  --font-size-l: 17px;
+  --font-size-xl: 18px;
+  --font-size-xxxl: 26.4px;
+  --font-size-xs2: 12px;
+  --font-size-xxl2: 20px;
+
+  --font-family-work_sans: "Work Sans";
+}
+
+.worksans-bold-quick-silver-15px {
+  color: var(--quick-silver);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-13px {
+  color: var(--indigo);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-gray-15px {
+  color: var(--gray);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: 18;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-bold-indigo-26-4px2 {
+  color: var(--indigo-22);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-bold-onyx-26-4px {
+  color: var(--onyx);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-indigo-26-4px3 {
+  color: var(--indigo);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-quick-silver-15px {
+  color: var(--quick-silver);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-tundora-15px {
+  color: var(--tundora);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-star-dust-12px {
+  color: var(--star-dust);
+  font-family: var(--font-family-work_sans);
+  font-size: 12;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-abbey-14px {
+  color: var(--abbey);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-medium-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.worksans-semi-bold-suva-gray-10px {
+  color: var(--suva-gray);
+  font-family: var(--font-family-work_sans);
+  font-size: 10;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-star-dust-15px {
+  color: var(--star-dust-2);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-fuscous-gray-18px {
+  color: var(--fuscous-gray);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-white-26-4px {
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-bold-onyx-20px {
+  color: var(--onyx);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxl2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-13px-2 {
+  color: var(--indigo-2);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-fuscous-gray-18px {
+  color: var(--fuscous-gray);
+  font-family: var(--font-family-work_sans);
+  font-size: 18;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-white-14px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-17px {
+  color: var(--indigo);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-eerie-black-15px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-eerie-black-17px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-star-dust-12px {
+  color: var(--star-dust);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs2);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-white-17px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  font-style: normal;
+}

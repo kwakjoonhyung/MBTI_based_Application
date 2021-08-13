@@ -1,0 +1,373 @@
+.iphone-11-pro-x-loginpage {
+  background-color: var(--white);
+  height: 812px;
+  overflow: hidden;
+  position: relative;
+  width: 375px;
+}
+
+.iphone-11-pro-x-loginpage .view {
+  height: 45px;
+  left: 30px;
+  position: absolute;
+  top: 496px;
+  width: 317px;
+}
+
+.iphone-11-pro-x-loginpage .overlap-group {
+  background-color: var(--periwinkle-gray);
+  border-radius: 16px;
+  height: 45px;
+  width: 315px;
+}
+
+.iphone-11-pro-x-loginpage .phone-number {
+  background-color: transparent;
+  border: 0;
+  height: 18px;
+  left: 14px;
+  letter-spacing: -0.3px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  top: 13px;
+  width: 287px;
+}
+
+.iphone-11-pro-x-loginpage .phone-number::placeholder {
+  color: #ffffff99;
+}
+
+.iphone-11-pro-x-loginpage .view-1 {
+  height: 45px;
+  left: 30px;
+  position: absolute;
+  top: 550px;
+  width: 317px;
+}
+
+.iphone-11-pro-x-loginpage .password {
+  background-color: transparent;
+  border: 0;
+  height: 18px;
+  left: 14px;
+  letter-spacing: -0.3px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  top: 14px;
+  width: 287px;
+}
+
+.iphone-11-pro-x-loginpage .password::placeholder {
+  color: #ffffff99;
+}
+
+.iphone-11-pro-x-loginpage .overlap-group1 {
+  height: 157px;
+  left: -17px;
+  position: absolute;
+  top: 597px;
+  width: 400px;
+}
+
+.iphone-11-pro-x-loginpage .view-2 {
+  cursor: pointer;
+  height: 45px;
+  left: 47px;
+  position: absolute;
+  top: 7px;
+  width: 317px;
+}
+
+.iphone-11-pro-x-loginpage .overlap-group2 {
+  background-color: var(--indigo);
+  border-radius: 16px;
+  height: 45px;
+  position: relative;
+  width: 315px;
+}
+
+.iphone-11-pro-x-loginpage .text-1 {
+  height: 18px;
+  left: 137px;
+  letter-spacing: -0.3px;
+  position: absolute;
+  text-align: center;
+  top: 14px;
+}
+
+.iphone-11-pro-x-loginpage .text-5 {
+  height: 157px;
+  left: 0;
+  letter-spacing: -0.3px;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  top: 0;
+  width: 400px;
+}
+
+.iphone-11-pro-x-loginpage .overlap-group-1 {
+  height: 261px;
+  left: -12px;
+  position: absolute;
+  top: 235px;
+  width: 400px;
+}
+
+.iphone-11-pro-x-loginpage .rectangle-4 {
+  background-color: var(--peach);
+  height: 18px;
+  left: 134px;
+  position: absolute;
+  top: 174px;
+  width: 130px;
+}
+
+.iphone-11-pro-x-loginpage .text-3 {
+  height: 28px;
+  left: 0;
+  letter-spacing: -0.53px;
+  position: absolute;
+  text-align: center;
+  top: 195px;
+  width: 400px;
+}
+
+.iphone-11-pro-x-loginpage .text-4 {
+  cursor: pointer;
+  height: 157px;
+  left: 0;
+  letter-spacing: -0.3px;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  top: 104px;
+  width: 400px;
+}
+
+.iphone-11-pro-x-loginpage .image-1 {
+  height: 164px;
+  left: 115px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 178px;
+}
+
+.iphone-11-pro-x-loginpage .text-2 {
+  height: 46px;
+  left: 65px;
+  letter-spacing: -0.4px;
+  position: absolute;
+  text-align: center;
+  top: 172px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:700,500,600");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+:root {
+  --eerie-black: rgba(28, 28, 28, 1);
+  --onyx: rgba(58, 58, 58, 1);
+  --tundora: rgba(70, 70, 70, 1);
+  --abbey: rgba(77, 77, 77, 1);
+  --indigo: rgba(81, 123, 204, 1);
+  --indigo-2: rgba(82, 101, 204, 1);
+  --fuscous-gray: rgba(84, 84, 84, 1);
+  --gray: rgba(128, 128, 128, 1);
+  --star-dust-2: rgba(154, 154, 154, 1);
+  --star-dust: rgba(161, 161, 161, 1);
+  --quick-silver: rgba(163, 162, 168, 1);
+  --periwinkle-gray: rgba(188, 201, 225, 1);
+  --mystic: rgba(229, 235, 246, 1);
+  --peach: rgba(255, 234, 180, 1);
+  --white: rgba(255, 255, 255, 1);
+
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 15px;
+  --font-size-l: 17px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 20px;
+  --font-size-xxxl: 26.4px;
+
+  --font-family-work_sans: "Work Sans";
+}
+
+.worksans-bold-quick-silver-15px {
+  color: var(--quick-silver);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-gray-15px {
+  color: var(--gray);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-indigo-26-4px {
+  color: var(--indigo-2);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-bold-onyx-26-4px {
+  color: var(--onyx);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-quick-silver-15px {
+  color: var(--quick-silver);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-tundora-15px {
+  color: var(--tundora);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-abbey-14px {
+  color: var(--abbey);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-medium-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.worksans-bold-star-dust-15px {
+  color: var(--star-dust-2);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-fuscous-gray-18px {
+  color: var(--fuscous-gray);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-white-26-4px {
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-bold-onyx-20px {
+  color: var(--onyx);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-white-14px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-17px {
+  color: var(--indigo);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-eerie-black-17px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-star-dust-12px {
+  color: var(--star-dust);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  font-style: normal;
+}
