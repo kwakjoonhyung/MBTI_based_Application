@@ -12,6 +12,6 @@
 6. 메인 화면(finding) : mainPage.html / mainPage.css
 7. 채팅방 목록 화면 : ChattingListPage.html / ChattingListCSS.css
 8. 채팅방 화면 : 
-9. 상세 보기 화면 : PersonalInfo.html/ PersonalInfo.css
+9. 상세 보기 화면 : PersonalInfo.html/ PersonlInfo.css
 10. MBTI 검사 화면 : 
 
