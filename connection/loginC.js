@@ -6,9 +6,16 @@
 // }
 
 function sendRequest() {
-  let userID = document.getElementById("userID").value;
-  let userPW = document.getElementById("userPW").value;
-  console.log(`아이디 ${userID} 비밀번호 ${userPW}`);
+  let userID = document.getElementById('userID').value
+  let userPW = document.getElementById('userPW').value
+  // console.log(`아이디 ${userID} 비밀번호 ${userPW}`)
+  
+  function uid(){
+    return userID
+  }
+  function upw(){
+    return userPW
+  }
 
   var httpRequest = new XMLHttpRequest();
   httpRequest.onreadystatechange = function () {
@@ -16,7 +23,15 @@ function sendRequest() {
       httpRequest.readyState == XMLHttpRequest.DONE &&
       httpRequest.status == 200
     ) {
-      console.log(httpRequest.status);
+      $.ajax({
+        type: "POST",
+        url: `http://115.85.181.34:8081/api/user/login?userPhoneNum=${uid()}&userPw=${upw()}`,
+        data:{},
+        success: function(response){
+            sessionStorage.setItem("userName", response.userName)
+            location.href=`mainPage.html`
+        }
+    })
     }
   };
   // POST 방식의 요청은 데이터를 Http 헤더에 포함시켜 전송함.
@@ -25,16 +40,11 @@ function sendRequest() {
     `http://115.85.181.34:8081/api/user/login?userPhoneNum=${userID}&userPw=${userPW}`,
     true
   );
-  if (httpRequest.status == 200) {
-    // location.href = "./MBTI/SignUp2.html";
-    alert("와 화장실가야징");
-  } else {
-    alert("아이고.." + httpRequest.status);
-  }
-
   httpRequest.setRequestHeader(
     "Content-Type",
     "application/x-www-form-urlencoded"
   );
-  httpRequest.send("");
+  httpRequest.send(
+    ""
+  );
 }
