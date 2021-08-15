@@ -6,10 +6,18 @@
     <title>Sign Up 1</title>
     <link rel="stylesheet" href="SignUpCSS.css" />
     <script>
-      function local_storaging() {
-        let MBTI = document.getElementById("mbtibox").value;
-        localStorage.setItem("userMBTI", MBTI);
-        console.log("MBTI : " + MBTI);
+      let userMBTI = document.getElementById("mbtibox").value;
+      localStorage.setItem("mbti_str", userMBTI);
+      function mbtichecking() {
+        if (document.getElementById("mbtibox").value.length != 4) {
+          alert("에러 : MBTI는 네 글자입니다 :(");
+        } else {
+          alert("로그인이 완료되었습니다 !");
+          goReplace();
+        }
+        function goReplace() {
+          location.replace("signup2.html");
+        }
       }
     </script>
   </head>
@@ -79,8 +87,9 @@
             <input
               type="submit"
               value="회원가입 마저 하기"
-              onclick="local_storaging()"
               class="overlap-group2"
+              onclick="mbtichecking()"
+              id="signup2box"
               style="
                 outline: 0;
                 border: 0;
@@ -97,8 +106,7 @@
               class="text-5 valign-text-middle worksans-semi-bold-white-15px"
             >
             
-            </div>
-          </div> -->
+            </div>-->
           </div>
         </form>
       </div>
