@@ -6,9 +6,9 @@
 // }
 
 function sendRequest() {
-  let userID = document.getElementById('userID').value
-  let userPW = document.getElementById('userPW').value
-  console.log(`아이디 ${userID} 비밀번호 ${userPW}`)
+  let userID = document.getElementById("userID").value;
+  let userPW = document.getElementById("userPW").value;
+  console.log(`아이디 ${userID} 비밀번호 ${userPW}`);
 
   var httpRequest = new XMLHttpRequest();
   httpRequest.onreadystatechange = function () {
@@ -25,11 +25,10 @@ function sendRequest() {
     `http://115.85.181.34:8081/api/user/login?userPhoneNum=${userID}&userPw=${userPW}`,
     true
   );
+
   httpRequest.setRequestHeader(
     "Content-Type",
     "application/x-www-form-urlencoded"
   );
-  httpRequest.send(
-    ""
-  );
+  httpRequest.send("");
 }

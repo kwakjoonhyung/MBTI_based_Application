@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up 1</title>
     <link rel="stylesheet" href="SignUpCSS.css" />
-    <link rel="stylesheet" href="ani.html" />
+    <script>
+      function local_storaging() {
+        let MBTI = document.getElementById("mbtibox").value;
+        localStorage.setItem("userMBTI", MBTI);
+        console.log("MBTI : " + MBTI);
+      }
+    </script>
   </head>
   <body>
     <div class="container-center-horizontal">
@@ -34,10 +40,12 @@
             연마가 준비한 검사로 맞춰볼게요!
           </div>
         </div>
-        <img
-          class="image-5"
-          src="https://cdn.animaapp.com/projects/610f8ec4126dcc83e7f1e082/releases/610fbd9f88384825b6de468d/img/image-5@2x.png"
-        />
+        <a href="testPage.html">
+          <img
+            class="image-5"
+            src="https://cdn.animaapp.com/projects/610f8ec4126dcc83e7f1e082/releases/610fbd9f88384825b6de468d/img/image-5@2x.png"
+          />
+        </a>
         <div class="text-4 valign-text-middle worksans-bold-quick-silver-15px">
           돋보기를 눌러 검사를 시작해주세요
         </div>
@@ -53,27 +61,46 @@
             만약 검사 없이 진행하고 싶다면?
           </div>
         </div>
-        <div class="iphone-11-pro-x-signup1-item">
-          <div class="overlap-group3">
-            <input
-              class="mbti worksans-semi-bold-white-15px"
-              name="mbti"
-              placeholder="MBTI"
-              type="text"
-              required=""
-            />
+        <form action="" name="login_form" onsubmit="return false">
+          <div class="iphone-11-pro-x-signup1-item">
+            <div class="overlap-group3">
+              <input
+                class="mbti worksans-semi-bold-white-15px"
+                name="mbti"
+                id="mbtibox"
+                placeholder="MBTI"
+                type="text"
+                required=""
+              />
+            </div>
           </div>
-        </div>
-        <div class="iphone-11-pro-x-signup1-item">
-          <div class="overlap-group2">
+
+          <div class="iphone-11-pro-x-signup1-item">
+            <input
+              type="submit"
+              value="회원가입 마저 하기"
+              onclick="local_storaging()"
+              class="overlap-group2"
+              style="
+                outline: 0;
+                border: 0;
+                color: var(--white);
+                font-family: var(--font-family-work_sans);
+                font-size: var(--font-size-m);
+                font-weight: 600;
+                font-style: normal;
+              "
+            />
+            <!-- <div class="overlap-group2">
             <div class="rectangle-3-1"></div>
             <div
               class="text-5 valign-text-middle worksans-semi-bold-white-15px"
             >
-              회원가입 마저 하기
+            
             </div>
+          </div> -->
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </body>
