@@ -2,6 +2,11 @@ body{
   margin: 0;
   padding: 0;
 }
+.KEYWORD1, .KEYWORD2, .KEYWORD3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .iphone-11-pro-x-mainpage {
   align-items: center;
   background-color: var(--white);
@@ -197,10 +202,12 @@ body{
 
 .iphone-11-pro-x-mainpage .percent {
   height: 15px;
-  left: 298px;
+  left: 282px;
   letter-spacing: -0.26px;
   position: absolute;
   top: 140px;
+  z-index: 1;
+  color: black;
 }
 
 .iphone-11-pro-x-mainpage .view {
