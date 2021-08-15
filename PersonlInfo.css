@@ -1,0 +1,601 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.iphone-11-pro-x-personalinfopage {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 812px;
+  overflow: hidden;
+  width: 375px;
+}
+
+.iphone-11-pro-x-personalinfopage .overlap-group-1 {
+  height: 238px;
+  margin-left: 5.44px;
+  margin-top: -13px;
+  position: relative;
+  width: 454px;
+}
+
+.iphone-11-pro-x-personalinfopage .title {
+  align-items: flex-start;
+  display: flex;
+  height: 190px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.iphone-11-pro-x-personalinfopage .overlap-group1 {
+  height: 190px;
+  position: relative;
+  width: 452px;
+}
+
+.iphone-11-pro-x-personalinfopage .text-1 {
+  height: 157px;
+  left: 52px;
+  letter-spacing: -0.53px;
+  position: absolute;
+  top: 0;
+  width: 400px;
+}
+
+.iphone-11-pro-x-personalinfopage .span {
+  letter-spacing: -0.14px;
+}
+
+.iphone-11-pro-x-personalinfopage .text-2 {
+  height: 157px;
+  left: 0;
+  letter-spacing: -0.30px;
+  position: absolute;
+  text-align: center;
+  top: 33px;
+  width: 400px;
+}
+
+.iphone-11-pro-x-personalinfopage .group {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 156px;
+  position: absolute;
+  top: 156px;
+  width: 228px;
+}
+
+.iphone-11-pro-x-personalinfopage .text {
+  height: 20px;
+  letter-spacing: -0.34px;
+}
+
+.iphone-11-pro-x-personalinfopage .line-1 {
+  height: 1px;
+  margin-top: 44px;
+  width: 226px;
+}
+
+.iphone-11-pro-x-personalinfopage .ellipse-12 {
+  height: 70px;
+  left: 62px;
+  object-fit: cover;
+  position: absolute;
+  top: 146px;
+  width: 69px;
+}
+
+.iphone-11-pro-x-personalinfopage .mbti {
+  align-items: flex-start;
+  display: flex;
+  height: 38px;
+  left: 54px;
+  position: absolute;
+  top: 200px;
+}
+
+.iphone-11-pro-x-personalinfopage .overlap-group2 {
+  height: 38px;
+  position: relative;
+  width: 87px;
+}
+
+.iphone-11-pro-x-personalinfopage .rectangle-39 {
+  background-color: 
+#ff6f6f;
+  border-radius: 14px;
+  height: 18px;
+  left: 17px;
+  position: absolute;
+  top: 10px;
+  width: 50px;
+}
+
+.iphone-11-pro-x-personalinfopage .mbti-1 {
+  height: 38px;
+  left: 0;
+  letter-spacing: -0.30px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 87px;
+}
+
+.iphone-11-pro-x-personalinfopage .text-8 {
+  height: 20px;
+  left: 156px;
+  letter-spacing: -0.28px;
+  position: absolute;
+  top: 195px;
+  width: 170px;
+}
+
+.iphone-11-pro-x-personalinfopage .main-g {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4.0px;
+  margin-top: 16px;
+  min-height: 64px;
+  width: 329px;
+}
+
+.iphone-11-pro-x-personalinfopage .text-10 {
+  height: 20px;
+  letter-spacing: -0.28px;
+  margin-top: 17px;
+  width: 327px;
+}
+
+.iphone-11-pro-x-personalinfopage .line-1-1 {
+  height: 1px;
+  margin-top: 6px;
+  width: 325px;
+}
+
+.iphone-11-pro-x-personalinfopage .main-g-1 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 3.0px;
+  margin-top: 33px;
+  min-width: 330px;
+}
+
+.iphone-11-pro-x-personalinfopage .overlap-group3 {
+  height: 130px;
+  position: relative;
+  width: 330px;
+}
+
+.iphone-11-pro-x-personalinfopage .group-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 330px;
+}
+
+.iphone-11-pro-x-personalinfopage .text-6 {
+  height: 20px;
+  letter-spacing: -0.34px;
+  margin-left: 1px;
+}
+
+.iphone-11-pro-x-personalinfopage .rectangle-1 {
+  background-color: var(--mystic);
+  border-radius: 9px;
+  height: 100px;
+  margin-top: 10px;
+  width: 328px;
+}
+
+.iphone-11-pro-x-personalinfopage .text-7 {
+  color: 
+#4e4e4e;
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s2);
+  font-weight: 600;
+  left: 8px;
+  letter-spacing: -0.28px;
+  position: absolute;
+  top: 37px;
+  width: 314px;
+}
+
+.iphone-11-pro-x-personalinfopage .x11 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 7.0px;
+  margin-top: 218px;
+  min-width: 334px;
+}
+
+.iphone-11-pro-x-personalinfopage .x11-1 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 161px;
+}
+
+.iphone-11-pro-x-personalinfopage .overlap-group {
+  border-radius: 19.5px;
+  height: 39px;
+  position: relative;
+  width: 159px;
+}
+
+.iphone-11-pro-x-personalinfopage .rectangle-21 {
+  background-color: var(--indigo);
+  border-radius: 19.5px;
+  cursor: pointer;
+  height: 39px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.iphone-11-pro-x-personalinfopage .text-4 {
+  cursor: pointer;
+  height: 33px;
+  left: 10px;
+  letter-spacing: -0.34px;
+  position: absolute;
+  text-align: center;
+  top: 4px;
+  width: 139px;
+}
+
+.iphone-11-pro-x-personalinfopage .view {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 14px;
+  min-width: 161px;
+}
+
+.iphone-11-pro-x-personalinfopage .rectangle-22 {
+  background-color: 
+#c2c9d5;
+  border-radius: 19.5px;
+  cursor: pointer;
+  height: 39px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.iphone-11-pro-x-personalinfopage .text-5 {
+  cursor: pointer;
+  height: 33px;
+  left: 11px;
+  letter-spacing: -0.34px;
+  position: absolute;
+  text-align: center;
+  top: 4px;
+  width: 139px;
+}
+
+.iphone-11-pro-x-personalinfopage .view-1 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 6.0px;
+  margin-top: 23px;
+  min-width: 381px;
+}
+
+.iphone-11-pro-x-personalinfopage .overlap-group4 {
+  background-color: var(--indigo);
+  height: 64px;
+  position: relative;
+  width: 375px;
+}
+
+.iphone-11-pro-x-personalinfopage .setting {
+  height: 51px;
+  left: 250px;
+  letter-spacing: -0.36px;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  width: 122px;
+}
+
+.iphone-11-pro-x-personalinfopage .chatting {
+  cursor: pointer;
+  height: 51px;
+  left: 18px;
+  letter-spacing: -0.36px;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  width: 103px;
+}
+
+.iphone-11-pro-x-personalinfopage .finding {
+  cursor: pointer;
+  height: 51px;
+  left: 103px;
+  letter-spacing: -0.36px;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  width: 171px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:700,500,600");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+:root {
+  --eerie-black: 
+rgba(28, 28, 28, 1);
+  --onyx: 
+rgba(58, 58, 58, 1);
+  --tundora: 
+rgba(70, 70, 70, 1);
+  --abbey: 
+rgba(77, 77, 77, 1);
+  --indigo-2: 
+rgba(81, 123, 204, 0.502);
+  --indigo: 
+rgba(81, 123, 204, 1);
+  --indigo-22: 
+rgba(82, 101, 204, 1);
+  --fuscous-gray: 
+rgba(84, 84, 84, 1);
+  --gray: 
+rgba(128, 128, 128, 1);
+  --suva-gray: 
+rgba(135, 135, 135, 1);
+  --star-dust-2: 
+rgba(154, 154, 154, 1);
+  --star-dust: 
+rgba(161, 161, 161, 1);
+  --quick-silver: 
+rgba(163, 162, 168, 1);
+  --periwinkle-gray: 
+rgba(188, 201, 225, 1);
+  --mystic: 
+rgba(229, 235, 246, 1);
+  --peach: 
+rgba(255, 234, 180, 1);
+  --white: 
+rgba(255, 255, 255, 1);
+
+  --font-size-xs: 12px;
+  --font-size-xs: 13px;
+  --font-size-s: 14px;
+  --font-size-m: 15px;
+  --font-size-l: 17px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 20px;
+  --font-size-xxxl: 26.4px;
+
+  --font-family-work_sans: "Work Sans";
+}
+
+.worksans-bold-quick-silver-15px {
+  color: var(--quick-silver);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-13px {
+  color: var(--indigo);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-gray-15px {
+  color: var(--gray);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-indigo-26-4px2 {
+  color: var(--indigo-22);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-bold-onyx-26-4px {
+  color: var(--onyx);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-indigo-26-4px {
+  color: var(--indigo);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-quick-silver-15px {
+  color: var(--quick-silver);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-tundora-15px {
+  color: var(--tundora);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-star-dust-12px {
+  color: var(--star-dust);
+  font-family: var(--font-family-work_sans);
+  font-size: 12;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-abbey-14px {
+  color: var(--abbey);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-medium-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.worksans-semi-bold-suva-gray-10px {
+  color: var(--suva-gray);
+  font-family: var(--font-family-work_sans);
+  font-size: 10;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-star-dust-15px {
+  color: var(--star-dust-2);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-fuscous-gray-18px {
+  color: var(--fuscous-gray);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-white-26-4px {
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-bold-onyx-20px {
+  color: var(--onyx);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-13px-2 {
+  color: var(--indigo-2);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-white-14px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-17px {
+  color: var(--indigo);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-eerie-black-15px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-eerie-black-17px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-star-dust-12px {
+  color: var(--star-dust);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-white-17px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  font-style: normal;
+}
