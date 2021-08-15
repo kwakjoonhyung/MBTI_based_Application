@@ -1,6 +1,8 @@
-function sendRequest() {
-  var id = document.login_form.userID.value;
+var id = document.getElementById("userID");
 
+console.log(id);
+
+function sendRequest() {
   var httpRequest = new XMLHttpRequest();
   httpRequest.onreadystatechange = function () {
     if (
@@ -24,4 +26,3 @@ function sendRequest() {
     "creationTime=11:11:11&id=minjae12&lastAccessedTime=22:22:22"
   );
 }
-console.log(id);
