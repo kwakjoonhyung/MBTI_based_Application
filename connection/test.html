@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ajax연습</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+
+  <body>
+    <form action="/examples/media/action_target.php" method="post">
+      이름 : <input type="text" name="st_name" /><br />
+      학번 : <input type="text" name="st_id" /><br />
+      학과 : <input type="text" name="department" /><br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
+
+<!-- <body>
+    <script>
+        $.ajax({
+            type: "POST",
+            url: "http://115.85.181.34:8080/api/user/login?userPhoneNum=1&userPw=1234",
+            data: {},
+            success: function (response) {
+                let info = response
+                document.getElementById('box1').append('이름: ' + info.name)
+                document.getElementById('box2').append('나이: ' + info.age)
+                document.getElementById('box3').append('친구: ' + info.friend)
+            }
+        })
+
+        $.ajax({
+            type: "GET",
+            url: "http://115.85.181.34:8080/api/info/2",
+            data: {},
+            success: function (response) {
+                let info = response
+                document.getElementById('box4').append('이름: ' + info.name)
+                document.getElementById('box5').append('나이: ' + info.age)
+                document.getElementById('box6').append('친구: ' + info.friend)
+            }
+        })
+
+        $.ajax({
+            type:"GET",
+            url: "http://115.85.181.34:8080/api/hello",
+            data: {},
+            success: function (response){
+                document.getElementById('box7').append('인사 : ' + response)
+            }
+        })
+    </script>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3" style="margin-bottom: 20px"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+    <div id="box6" style="margin-bottom: 20px"></div>
+    <div id="box7"></div>
+</body> -->

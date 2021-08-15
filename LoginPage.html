@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="LoginCSS.css" />
     <link rel="stylesheet" href="ani.html" />
+    <script src="loginC.js"></script>
   </head>
   <body>
     <div class="container-center-horizontal">
@@ -35,28 +36,29 @@
             먼저 로그인 부탁드려요
           </h1>
         </div>
-        <div class="view">
-          <div class="overlap-group">
-            <input
-              class="phone-number worksans-semi-bold-white-15px"
-              name="전화번호phonenumber"
-              placeholder="전화번호 Phone Number"
-              type="text"
-              required=""
-            />
+        <form action="connection/loginC.js" name="login_form">
+          <div class="view">
+            <div class="overlap-group">
+              <input
+                class="phone-number worksans-semi-bold-white-15px"
+                name="userID"
+                placeholder="전화번호 Phone Number"
+                type="text"
+                required=""
+              />
+            </div>
           </div>
-        </div>
-        <div class="view-1">
-          <div class="overlap-group">
-            <input
-              class="password worksans-semi-bold-white-15px"
-              name="비밀번호password"
-              placeholder="비밀번호 Password"
-              type="password"
-              required=""
-            />
+          <div class="view-1">
+            <div class="overlap-group">
+              <input
+                class="password worksans-semi-bold-white-15px"
+                name="userPW"
+                placeholder="비밀번호 Password"
+                type="password"
+                required=""
+              />
+            </div>
           </div>
-        </div>
         <div
           class="overlap-group1"
           onclick="document.location.href = 'MainPage.html'"
@@ -70,6 +72,7 @@
               </div>
             </div>
           </div>
+        </form>
           <div
             class="text-5 valign-text-middle worksans-bold-quick-silver-15px"
           >
