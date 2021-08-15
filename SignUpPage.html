@@ -6,9 +6,10 @@
     <title>Sign Up 1</title>
     <link rel="stylesheet" href="SignUpCSS.css" />
     <script>
-      let userMBTI = document.getElementById("mbtibox").value;
-      localStorage.setItem("mbti_str", userMBTI);
+      
       function mbtichecking() {
+        let userMBTI = document.getElementById("mbtibox").value;
+        localStorage.setItem("mbti_str", userMBTI);
         if (document.getElementById("mbtibox").value.length != 4) {
           alert("에러 : MBTI는 네 글자입니다 :(");
         } else {
@@ -16,7 +17,7 @@
           goReplace();
         }
         function goReplace() {
-          location.replace("signup2.html");
+          location.href = "signup2.html";
         }
       }
     </script>
