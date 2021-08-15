@@ -16,7 +16,7 @@ function sendRequest() {
       httpRequest.readyState == XMLHttpRequest.DONE &&
       httpRequest.status == 200
     ) {
-      // document.getElementById("text").innerHTML = httpRequest.responseText;
+      console.log(httpRequest.status);
     }
   };
   // POST 방식의 요청은 데이터를 Http 헤더에 포함시켜 전송함.
@@ -25,6 +25,12 @@ function sendRequest() {
     `http://115.85.181.34:8081/api/user/login?userPhoneNum=${userID}&userPw=${userPW}`,
     true
   );
+  if (httpRequest.status == 200) {
+    // location.href = "./MBTI/SignUp2.html";
+    alert("와 화장실가야징");
+  } else {
+    alert("아이고.." + httpRequest.status);
+  }
 
   httpRequest.setRequestHeader(
     "Content-Type",
