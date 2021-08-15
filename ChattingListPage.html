@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -16,48 +21,25 @@
           24시간 후에 채팅방이 사라지니 주의하세요 !
         </p>
       </div>
-      <div class="list-1">
-        <div class="overlap-group">
-          <div class="ellipse-18"></div>
-          <div class="overlap-group-1">
-            <div class="nickname valign-text-middle worksans-semi-bold-eerie-black-17px">NICKNAME</div>
-            <div class="text-message valign-text-middle worksans-semi-bold-gray-15px">Text Message</div>
-          </div>
-          <div class="view">
-            <div class="overlap-group-2">
-              <div class="number valign-text-middle worksans-medium-white-15px">12</div>
+      <div id=app style="margin-top: 8px">
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-action" v-for="(item,index) in chatrooms" v-bind:key="item.roomId" >
+            <div class="overlap-group" >
+              <div class="ellipse-18"></div>
+              <div class="overlap-group-1">
+                <div class="nickname valign-text-middle worksans-semi-bo₩₩ld-eerie-black-17px">{{item.roomName}}</div>
+                <div class="text-message valign-text-middle worksans-semi-bold-gray-15px" v-if="inObj(item.roomId)">{{dictObj[item.roomId].message}}</div>
+                <div class="text-message valign-text-middle worksans-semi-bold-gray-15px" v-else>아직 대화가 없습니다.</div>
+              </div>
+              <div class="view">
+                <div class="overlap-group-2" v-if="inObj(item.roomId)">
+                  <div class="number valign-text-middle worksans-medium-white-15px" v-if="inObj(item.roomId)">{{dictObj[item.roomId].count}}</div>
+                </div>
+                <div v-else> </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <div class="overlap-group">
-          <div class="ellipse-18"></div>
-          <div class="overlap-group-1">
-            <div class="nickname valign-text-middle worksans-semi-bold-eerie-black-17px">NICKNAME</div>
-            <div class="text-message valign-text-middle worksans-semi-bold-gray-15px">Text Message</div>
-          </div>
-          <div class="view">
-            <div class="overlap-group-2">
-              <div class="number valign-text-middle worksans-medium-white-15px">12</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <div class="overlap-group">
-          <div class="ellipse-18"></div>
-          <div class="overlap-group-1">
-            <div class="nickname valign-text-middle worksans-semi-bold-eerie-black-17px">NICKNAME</div>
-            <div class="text-message valign-text-middle worksans-semi-bold-gray-15px">Text Message</div>
-          </div>
-          <div class="view">
-            <div class="overlap-group-2">
-              <div class="number valign-text-middle worksans-medium-white-15px">12</div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </li>
+    </ul>
       <div class="view-1">
         <div class="overlap-group5" style="position: absolute; bottom: 0;">
           <div class="setting valign-text-middle worksans-bold-white-18px">SETTING</div>
@@ -69,3 +51,107 @@
   </div>
 </body>
 </html>
+<script> 
+  var sock_url = "ws://localhost:8081"
+  var url = "http://localhost:8081"
+  var userId = "c2ab87ef-db17-4b18-86d1-f9cb4c2eb5a8"
+  var userName = "군밤이"
+  var sock = new SockJS(url+ "/ws-stomp");
+  var ws = Stomp.over(sock);
+  var reconnect = 0;
+  var vm = new Vue({  
+        el: '#app',
+        data: {
+            room_name : '',
+            chatrooms: [
+            ],
+            devChatRoom: ["017d1e70-1620-4643-b69f-999016aea3be","613f74a9-4b9f-431b-993b-9b03bebf79e7","f63371da-587e-4985-94f1-d6c303a18a83", "52f35526-2acf-4209-81e1-856f2887f0a6"],
+            dictObj: {"017d1e70-1620-4643-b69f-999016aea3be": {
+              message: "",
+              count: 0
+            }, "613f74a9-4b9f-431b-993b-9b03bebf79e7": {
+              message: "",
+              count: 0
+            }, "f63371da-587e-4985-94f1-d6c303a18a83": {
+              message: "",
+              count: 0
+            }, "52f35526-2acf-4209-81e1-856f2887f0a6": {
+              message: "",
+              count: 0
+            }, 
+          
+          
+          },
+        },
+        created() {
+            this.findAllRoom();
+        },
+        mounted() {
+          this.connect(userId, this.devChatRoom);
+        },
+        methods: {
+            // 유저의 모든 채팅 방을 찾는 함수
+            findAllRoom: function() {
+                axios.get(url+ '/api/user/chatroom/' + userId)
+                .then(response => { this.chatrooms = response.data; })
+            },
+            sendMessage: function() {
+                ws.send("/pub/chat/message", {}, JSON.stringify({type:'TALK', roomId:this.roomId, sender:this.sender, message:this.message}));
+                this.message = '';
+            },
+            recvMessage: function(recv) {
+                this.count++;
+                //this.messages.unshift({"type":recv.type,"sender":recv.type=='ENTER'?'[알림]':recv.sender,"message":recv.message})
+                
+                if(recv.type == "CREATE") {
+                  this.findAllRoom();
+                  console.log("채팅방 재조회");
+                }
+                this.messageInfo = recv.message;
+                
+                if(recv.roomId in this.dictObj) {
+                  this.dictObj[recv.roomId].message = recv.message;
+                  this.dictObj[recv.roomId].count = this.dictObj[recv.roomId].count +1;
+                }
+                console.log(this.dictObj);
+                
+                console.log(recv);
+              },
+              connect: function(roomId, chatrooms) {
+        var ws = Stomp.over(sock);
+        // pub/sub event
+        ws.connect({}, function(frame) {
+            ws.subscribe("/sub/chat/room/"+roomId, function(message) {
+                var recv = JSON.parse(message.body);
+                vm.recvMessage(recv);
+            });
+            console.log(chatrooms);
+            for( var room of chatrooms) {
+                  console.log(room);
+                  ws.subscribe("/sub/chat/room/"+room, function(message) {
+                  var recv = JSON.parse(message.body);
+                  vm.recvMessage(recv);
+             });
+            }
+            ws.send("/pub/chat/message", {}, JSON.stringify({type:'ENTER', roomId:roomId, sender: userName}));
+        }, function(error) {
+            if(reconnect++ < 5) {
+                setTimeout(function() {
+                    console.log("connection reconnect");
+                    sock = new SockJS(sock_url+ "/ws-stomp");
+                    ws = Stomp.over(sock);
+                    connect();
+                },10*1000);
+            }
+        });
+      },
+        inObj: function(roomId){
+          if(roomId in this.dictObj) {
+            if(this.dictObj[roomId].count == 0) return false;
+            return true;
+          }
+          else return false;
+        }
+        },
+    });   
+</script>

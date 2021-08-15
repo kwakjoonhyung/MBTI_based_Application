@@ -13,6 +13,10 @@ body{
   width: 375px;
 }
 
+ul { padding-left:0; margin-left:0; margin-bottom: 0; padding-bottom: 0;}
+li { margin-bottom: 0; padding-bottom: 0;}
+
+
 .iphone-11-pro-x-chattinglistpage .title {
   align-items: flex-start;
   display: flex;
