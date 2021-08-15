@@ -1,0 +1,386 @@
+.iphone-11-pro-x-testpage {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 2789px;
+  padding: 88px 23px;
+  width: 375px;
+}
+
+.iphone-11-pro-x-testpage .text-1 {
+  align-self: center;
+  height: 132px;
+  letter-spacing: -0.8px;
+  margin-right: 20px;
+  text-align: center;
+  width: 318px;
+}
+
+.iphone-11-pro-x-testpage .overlap-group {
+  align-items: flex-end;
+  background-color: var(--mystic);
+  border-radius: 9px;
+  display: flex;
+  height: 137px;
+  justify-content: flex-end;
+  margin-top: 10px;
+  min-width: 328px;
+  padding: 0 14px;
+  margin-bottom: 10px;
+}
+
+.iphone-11-pro-x-testpage .text {
+  height: 132px;
+  letter-spacing: -0.4px;
+  text-align: center;
+  padding-right: 10px;
+  width: 299px;
+}
+
+.iphone-11-pro-x-testpage .overlap-group-1 {
+  align-items: flex-end;
+  background-color: var(--mystic);
+  border-radius: 9px;
+  display: flex;
+  height: 137px;
+  justify-content: flex-end;
+  margin-top: 15px;
+  min-width: 328px;
+  padding: 2px 14px;
+  margin-bottom: 10px;
+}
+
+.iphone-11-pro-x-testpage .line-7 {
+  align-self: center;
+  height: 2px;
+  margin: auto;
+  width: 318px;
+}
+
+.iphone-11-pro-x-testpage .text-4 {
+  align-self: center;
+  height: 132px;
+  letter-spacing: -0.8px;
+  margin-right: 25px;
+  margin-top: 58px;
+  text-align: center;
+  width: 318px;
+}
+
+.iphone-11-pro-x-testpage .line {
+  align-self: center;
+  height: 2px;
+  margin: auto;
+  width: 318px;
+}
+
+.iphone-11-pro-x-testpage .text-7 {
+  align-self: center;
+  height: 132px;
+  letter-spacing: -0.8px;
+  margin-right: 20px;
+  margin-top: 57px;
+  text-align: center;
+  width: 318px;
+}
+
+.iphone-11-pro-x-testpage .text-8 {
+  align-self: center;
+  height: 132px;
+  letter-spacing: -0.8px;
+  margin-right: 25px;
+  margin-top: 76px;
+  text-align: center;
+  width: 318px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:700,600");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --eerie-black: rgba(28, 28, 28, 1);
+  --onyx: rgba(58, 58, 58, 1);
+  --tundora: rgba(70, 70, 70, 1);
+  --abbey: rgba(77, 77, 77, 1);
+  --indigo-2: rgba(81, 123, 204, 0.502);
+  --indigo: rgba(81, 123, 204, 1);
+  --indigo-22: rgba(82, 101, 204, 1);
+  --fuscous-gray: rgba(84, 84, 84, 1);
+  --gray: rgba(128, 128, 128, 1);
+  --suva-gray: rgba(135, 135, 135, 1);
+  --star-dust-2: rgba(154, 154, 154, 1);
+  --star-dust: rgba(161, 161, 161, 1);
+  --quick-silver: rgba(163, 162, 168, 1);
+  --periwinkle-gray: rgba(188, 201, 225, 1);
+  --mystic: rgba(229, 235, 246, 1);
+  --peach: rgba(255, 234, 180, 1);
+  --white: rgba(255, 255, 255, 1);
+
+  --font-size-xxxxs: 14px;
+  --font-size-xxs: 17px;
+  --font-size-xs: 12px;
+  --font-size-xs: 13px;
+  --font-size-s2: 15px;
+  --font-size-s3: 20px;
+  --font-size-m2: 26.4px;
+  --font-size-xs2: 18px;
+
+  --font-family-work_sans: "Work Sans";
+  --font-family-work_sans-medium: "Work Sans-Medium";
+}
+
+.worksans-bold-quick-silver-15px {
+  color: var(--quick-silver);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-star-dust-14px {
+  color: var(--star-dust);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxxs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-13px {
+  color: var(--indigo);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-gray-15px {
+  color: var(--gray);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s2);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-indigo-26-4px {
+  color: var(--indigo-22);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-bold-onyx-26-4px {
+  color: var(--onyx);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s2);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-indigo-26-4px-2 {
+  color: var(--indigo);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-13px {
+  color: var(--indigo);
+  font-family: var(--font-family-work_sans);
+  font-size: 13;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-quick-silver-15px {
+  color: var(--quick-silver);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s2);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-tundora-15px {
+  color: var(--tundora);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s2);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-star-dust-12px {
+  color: var(--star-dust);
+  font-family: var(--font-family-work_sans);
+  font-size: 12;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-13px-2 {
+  color: var(--indigo-2);
+  font-family: var(--font-family-work_sans);
+  font-size: 13;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-abbey-14px {
+  color: var(--abbey);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxxs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-medium-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s2);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.worksans-semi-bold-suva-gray-10px {
+  color: var(--suva-gray);
+  font-family: var(--font-family-work_sans);
+  font-size: 10;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-star-dust-15px {
+  color: var(--star-dust-2);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-fuscous-gray-18px {
+  color: var(--fuscous-gray);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs2);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-white-26-4px {
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-bold-onyx-20px {
+  color: var(--onyx);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s3);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-13px-2 {
+  color: var(--indigo-2);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-white-14px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxxs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-medium-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans-medium);
+  font-size: var(--font-size-s2);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-17px {
+  color: var(--indigo);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-eerie-black-15px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s2);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-eerie-black-17px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-star-dust-12px {
+  color: var(--star-dust);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-white-17px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxs);
+  font-weight: 600;
+  font-style: normal;
+}
