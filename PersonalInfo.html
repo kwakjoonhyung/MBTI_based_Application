@@ -1,78 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="PersonlInfo.css">
-    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="PersonlInfo.css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="apiPractice.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-center-horizontal">
-        <div class="iphone-11-pro-x-personalinfopage screen" style="position: relative;">
-          <div class="overlap-group-1">
-            <div class="title">
-              <div class="overlap-group1">
-                <h1 class="text-1 valign-text-middle worksans-bold-white-26-4px">
-                  <span><span class="span worksans-bold-indigo-26-4px">연마</span><span class="span worksans-bold-onyx-26-4px">의 추천 인물</span>
-                  </span>
-                </h1>
-                <p class="text-2 valign-text-middle worksans-bold-quick-silver-15px">
-                  회원님이 선택하신 분의 정보에요 ! 어떠신가요 !
-                </p>
-              </div>
-            </div>
-            <div class="group">
-              <div class="text valign-text-middle worksans-semi-bold-indigo-17px">닉네임</div>
-              <img class="line-1" src="line-1-5.svg">
-            </div>
-            <img class="ellipse-12" src="ellipse-12.png">
-            <div class="mbti">
-              <div class="overlap-group2">
-                <div class="rectangle-39"></div>
-                <div class="mbti-1 valign-text-middle worksans-semi-bold-white-15px" id="mbti"></div>
-              </div>
-            </div>
-            <div class="text-8 valign-text-middle worksans-semi-bold-abbey-14px" id="nickname"></div>
-          </div>
-          <div class="main-g">
-            <div class="text valign-text-middle worksans-semi-bold-indigo-17px">자신을 표현하는 키워드</div>
-            <div class="text-10 valign-text-middle worksans-semi-bold-abbey-14px" id="keyword"></div>
-            <img class="line-1-1" src="line-1.svg">
-          </div>
-          <div class="main-g-1">
-            <div class="overlap-group3">
-              <div class="group-1">
-                <div class="text-6 valign-text-middle worksans-semi-bold-indigo-17px">자기 소개</div>
-                <div class="rectangle-1"></div>
-              </div>
-              <div class="text-7" id="introduce"></div>
+      <div
+        class="iphone-11-pro-x-personalinfopage screen"
+        style="position: relative"
+      >
+        <div class="overlap-group-1">
+          <div class="title">
+            <div class="overlap-group1">
+              <h1 class="text-1 valign-text-middle worksans-bold-white-26-4px">
+                <span
+                  ><span class="span worksans-bold-indigo-26-4px">연마</span
+                  ><span class="span worksans-bold-onyx-26-4px"
+                    >의 추천 인물</span
+                  >
+                </span>
+              </h1>
+              <p
+                class="
+                  text-2
+                  valign-text-middle
+                  worksans-bold-quick-silver-15px
+                "
+              >
+                회원님이 선택하신 분의 정보에요 ! 어떠신가요 !
+              </p>
             </div>
           </div>
-          <div class="x11">
-            <div class="x11-1">
-              <div class="overlap-group">
-                <div class="rectangle-21"></div>
-                <div class="text-4 valign-text-middle worksans-semi-bold-white-17px">1 : 1 채팅 하기</div>
-              </div>
+          <div class="group">
+            <div class="text valign-text-middle worksans-semi-bold-indigo-17px">
+              닉네임
             </div>
-            <div class="view">
-              <div class="overlap-group">
-                <div class="rectangle-22"></div>
-                <div class="text-5 valign-text-middle worksans-semi-bold-white-17px">다신 안볼래요</div>
+            <img class="line-1" src="line-1-5.svg" />
+          </div>
+          <img class="ellipse-12"
+          src=https://anima-uploads.s3.amazonaws.com/projects/610a1d9ba7b7f96f7f9ae599/releases/61123fd5db03d99469d19773/img/ellipse-12@2x.png?v=1629064795942">
+          <div class="mbti">
+            <div class="overlap-group2">
+              <div class="rectangle-39"></div>
+              <div
+                class="mbti-1 valign-text-middle worksans-semi-bold-white-15px"
+                id="mbti"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="text-8 valign-text-middle worksans-semi-bold-abbey-14px"
+            id="nickname"
+          ></div>
+        </div>
+        <div class="main-g">
+          <div class="text valign-text-middle worksans-semi-bold-indigo-17px">
+            자신을 표현하는 키워드
+          </div>
+          <div
+            class="text-10 valign-text-middle worksans-semi-bold-abbey-14px"
+            id="keyword"
+          ></div>
+          <img class="line-1-1" src="line-1.svg" />
+        </div>
+        <div class="main-g-1">
+          <div class="overlap-group3">
+            <div class="group-1">
+              <div
+                class="text-6 valign-text-middle worksans-semi-bold-indigo-17px"
+              >
+                자기 소개
+              </div>
+              <div class="rectangle-1"></div>
+            </div>
+            <div class="text-7" id="introduce"></div>
+          </div>
+        </div>
+        <div class="x11">
+          <div class="x11-1">
+            <div class="overlap-group">
+              <div class="rectangle-21"></div>
+              <div
+                class="text-4 valign-text-middle worksans-semi-bold-white-17px"
+              >
+                1 : 1 채팅 하기
               </div>
             </div>
           </div>
-          <div class="view-1" style="position: absolute; bottom: 0;">
-            <div class="overlap-group4">
-              <div class="setting valign-text-middle worksans-bold-white-18px">SETTING</div>
-              <div class="chatting valign-text-middle worksans-bold-white-18px">CHATTING</div>
-              <div class="finding valign-text-middle worksans-bold-white-18px">FINDING</div>
+          <div class="view">
+            <div class="overlap-group">
+              <div class="rectangle-22"></div>
+              <div
+                class="text-5 valign-text-middle worksans-semi-bold-white-17px"
+              >
+                다신 안볼래요
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="view-1" style="position: absolute; bottom: 0">
+          <div class="overlap-group4">
+            <div class="setting valign-text-middle worksans-bold-white-18px">
+              SETTING
+            </div>
+            <div class="chatting valign-text-middle worksans-bold-white-18px">
+              CHATTING
+            </div>
+            <div class="finding valign-text-middle worksans-bold-white-18px">
+              FINDING
             </div>
           </div>
         </div>
       </div>
-</body>
+    </div>
+  </body>
 </html>
