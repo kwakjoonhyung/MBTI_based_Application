@@ -1,138 +1,567 @@
-
 body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #d3d3d3;
+  margin: 0;
+  padding: 0;
 }
-.container{
-    position: relative;
-    width: 375px;
-    height: 812px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.iphone-11-pro-x-mainpage {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 812px;
+  overflow: hidden;
+  padding: 50px 0;
+  width: 375px;
 }
-.headline{
-    font-weight: 700;
-    font-size: 26.39px;
-    line-height: 30.95px;
-    margin-top: 47px;
-    margin-left: -35px;
+
+.iphone-11-pro-x-mainpage .title {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3.0px;
+  min-height: 61px;
+  width: 462px;
 }
-.headline2{
-    font-size: 15px;
-    line-height: 17.6px;
-    color: #A3A3A8;
+
+.iphone-11-pro-x-mainpage .text-1 {
+  align-self: flex-end;
+  height: 32px;
+  letter-spacing: -0.53px;
+  margin-right: 2px;
+  width: 400px;
 }
-.selectBox{
-    margin-top: 10px;
-    width: 343px;
-    height: 170px;
-    border: none;
-    border-radius: 23px;
-    background-color: #E4E7Ed;
+
+.iphone-11-pro-x-mainpage .span {
+  letter-spacing: -0.14px;
 }
-.upperBox{
-    display: flex;
+
+.iphone-11-pro-x-mainpage .text-2 {
+  height: 25px;
+  letter-spacing: -0.30px;
+  margin-top: 4px;
+  text-align: center;
+  width: 400px;
 }
-.picture{
-    width: 99px;
-    height: 99px;
-    border-radius: 55px;
-    margin-top: 8px;
-    margin-left: 20px;
-    background-color: white;
+
+.iphone-11-pro-x-mainpage .view-1 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 6.0px;
+  margin-top: 14px;
+  min-width: 349px;
 }
-.img{
-    width: 105px;
+
+.iphone-11-pro-x-mainpage .overlap-group {
+  height: 170px;
+  position: relative;
+  width: 345px;
 }
-.innerBox{
-    display: flex;
-    flex-direction: column;
-    margin-top: 26px;
-    margin-left: 12px;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 19.94px;
+
+.iphone-11-pro-x-mainpage .background {
+  align-items: flex-start;
+  display: flex;
+  height: 170px;
+  left: 0;
+  position: absolute;
+  top: 0;
 }
-.innerText{
-    margin-bottom: 8px;
+
+.iphone-11-pro-x-mainpage .overlap-group-1 {
+  border-radius: 16px;
+  height: 170px;
+  position: relative;
+  width: 343px;
 }
-.hashText{
-    font-size: 13px;
-    line-height: 15.25px;
-    color: #517BCC;
-    font-weight: 600;
-    width: 63px;
-    height: 20px;
-    border-radius: 10px;
-    background-color: white;
-    padding: 1px 5px;
+
+.iphone-11-pro-x-mainpage .rectangle-32 {
+  background-color: var(--mystic);
+  border-radius: 16px;
+  cursor: pointer;
+  height: 170px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 343px;
 }
-.underBox{
-    text-align: end;
-    margin-top: 4px;
-    margin-right: 17px;
+
+.iphone-11-pro-x-mainpage .rectangle-36 {
+  background-color: var(--white);
+  border-radius: 11.5px;
+  height: 23px;
+  left: 11px;
+  position: absolute;
+  top: 136px;
+  width: 320px;
 }
-.underText{
-    font-size: 10px;
-    font-weight: 600;
-    line-height: 11.73px;
+
+.iphone-11-pro-x-mainpage .mbti {
+  height: 17px;
+  left: 82px;
+  letter-spacing: -0.20px;
+  position: absolute;
+  text-align: right;
+  top: 115px;
+  width: 252px;
 }
-.percent{
-    margin-top: 2px;
-    width: 320px;
-    height: 23px;
-    border-radius: 11.5px;
-    background-color: white;
-    margin-left: 11px;
-    z-index: -1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.iphone-11-pro-x-mainpage .ellipse-8 {
+  height: 107px;
+  left: 15px;
+  object-fit: cover;
+  position: absolute;
+  top: 15px;
+  width: 107px;
 }
-.innerPercent{
-    background-color: #517BCC;
-    width: 237px;
-    height: 23px;
-    border-radius: 11.5px;
+
+.iphone-11-pro-x-mainpage .tag2 {
+  align-items: flex-start;
+  display: flex;
+  height: 20px;
+  left: 197px;
+  position: absolute;
+  top: 87px;
 }
-.percentText{
-    margin-right: 5px;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 15.25px;
-    color: lightgray;
+
+.iphone-11-pro-x-mainpage .overlap-group-2 {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  min-width: 63px;
+  padding: 0 3px;
+  box-sizing: border-box;
 }
-.refresh{
-    text-align: center;
-    font-size: 15px;
-    line-height: 17.6px;
-    font-weight: 700;
-    color: #A3A3A8;
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-    margin-bottom: 17px;
+
+.iphone-11-pro-x-mainpage .address {
+  height: 18px;
+  letter-spacing: -0.26px;
+  width: 53px;
 }
-.far{
-    font-size: 28px;
-    margin-bottom: 5px;
+
+.iphone-11-pro-x-mainpage .tag3 {
+  align-items: flex-start;
+  display: flex;
+  height: 20px;
+  left: 265px;
+  position: absolute;
+  top: 86px;
 }
-.bottomMenu{
-    position: absolute;
-    bottom: 0;
-    width: 375px;
-    display: flex;
-    justify-content: space-around;
-    height: 64px;
-    background-color: #517BCC;
-    align-items: center;
-    color: white;
-    font-size: 18px;
-    line-height: 21.11px;
-    font-weight: 700;
+
+.iphone-11-pro-x-mainpage .overlap-group-3 {
+  align-items: flex-end;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  height: 20px;
+  justify-content: flex-end;
+  min-width: 60px;
 }
+
+.iphone-11-pro-x-mainpage .rectangle-31 {
+  background-color: var(--indigo);
+  border-radius: 11.5px;
+  height: 23px;
+  left: 11px;
+  position: absolute;
+  top: 136px;
+  width: 237px;
+}
+
+.iphone-11-pro-x-mainpage .mbti-1 {
+  height: 20px;
+  left: 134px;
+  letter-spacing: -0.30px;
+  position: absolute;
+  top: 55px;
+  width: 184px;
+}
+
+.iphone-11-pro-x-mainpage .nickname {
+  height: 17px;
+  left: 134px;
+  letter-spacing: -0.30px;
+  position: absolute;
+  top: 28px;
+  width: 184px;
+}
+
+.iphone-11-pro-x-mainpage .tag1 {
+  align-items: flex-start;
+  display: flex;
+  height: 20px;
+  left: 129px;
+  position: absolute;
+  top: 86px;
+}
+
+.iphone-11-pro-x-mainpage .percent {
+  height: 15px;
+  left: 298px;
+  letter-spacing: -0.26px;
+  position: absolute;
+  top: 140px;
+}
+
+.iphone-11-pro-x-mainpage .view {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 6.0px;
+  margin-top: 16px;
+  min-width: 349px;
+}
+
+.iphone-11-pro-x-mainpage .view-2 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 1.0px;
+  margin-top: 13px;
+  min-width: 400px;
+}
+
+.iphone-11-pro-x-mainpage .overlap-group-4 {
+  height: 65px;
+  position: relative;
+  width: 400px;
+}
+
+.iphone-11-pro-x-mainpage .text-3 {
+  height: 34px;
+  left: 0;
+  letter-spacing: -0.30px;
+  opacity: 0.77;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  top: 31px;
+  width: 400px;
+}
+
+.iphone-11-pro-x-mainpage .x1 {
+  height: 34px;
+  left: 180px;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+
+.iphone-11-pro-x-mainpage .view-3 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 6.0px;
+  margin-top: 3px;
+  min-width: 381px;
+}
+
+.iphone-11-pro-x-mainpage .overlap-group1 {
+  background-color: var(--indigo);
+  height: 64px;
+  position: relative;
+  width: 375px;
+}
+
+.iphone-11-pro-x-mainpage .setting {
+  height: 51px;
+  left: 250px;
+  letter-spacing: -0.36px;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  width: 122px;
+}
+
+.iphone-11-pro-x-mainpage .chatting {
+  cursor: pointer;
+  height: 51px;
+  left: 18px;
+  letter-spacing: -0.36px;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  width: 103px;
+}
+
+.iphone-11-pro-x-mainpage .finding {
+  cursor: pointer;
+  height: 51px;
+  left: 103px;
+  letter-spacing: -0.36px;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  width: 171px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:700,500,600");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+:root {
+  --eerie-black: 
+rgba(28, 28, 28, 1);
+  --onyx: 
+rgba(58, 58, 58, 1);
+  --tundora: 
+rgba(70, 70, 70, 1);
+  --abbey: 
+rgba(77, 77, 77, 1);
+  --indigo-2: 
+rgba(81, 123, 204, 0.502);
+  --indigo: 
+rgba(81, 123, 204, 1);
+  --indigo-22: 
+rgba(82, 101, 204, 1);
+  --fuscous-gray: 
+rgba(84, 84, 84, 1);
+  --gray: 
+rgba(128, 128, 128, 1);
+  --suva-gray: 
+rgba(135, 135, 135, 1);
+  --star-dust-2: 
+rgba(154, 154, 154, 1);
+  --star-dust: 
+rgba(161, 161, 161, 1);
+  --quick-silver: 
+rgba(163, 162, 168, 1);
+  --periwinkle-gray: 
+rgba(188, 201, 225, 1);
+  --mystic: 
+rgba(229, 235, 246, 1);
+  --peach: 
+rgba(255, 234, 180, 1);
+  --white: 
+rgba(255, 255, 255, 1);
+
+  --font-size-xs: 12px;
+  --font-size-xs: 13px;
+  --font-size-s: 14px;
+  --font-size-m: 15px;
+  --font-size-l: 17px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 20px;
+  --font-size-xxxl: 26.4px;
+
+  --font-family-work_sans: "Work Sans";
+}
+
+.worksans-bold-quick-silver-15px {
+  color: var(--quick-silver);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-13px {
+  color: var(--indigo);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-gray-15px {
+  color: var(--gray);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-indigo-26-4px2 {
+  color: var(--indigo-22);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-bold-onyx-26-4px {
+  color: var(--onyx);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-indigo-26-4px {
+  color: var(--indigo);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-quick-silver-15px {
+  color: var(--quick-silver);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-tundora-15px {
+  color: var(--tundora);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-star-dust-12px {
+  color: var(--star-dust);
+  font-family: var(--font-family-work_sans);
+  font-size: 12;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-abbey-14px {
+  color: var(--abbey);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-medium-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.worksans-semi-bold-suva-gray-10px {
+  color: var(--suva-gray);
+  font-family: var(--font-family-work_sans);
+  font-size: 10;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-star-dust-15px {
+  color: var(--star-dust-2);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-fuscous-gray-18px {
+  color: var(--fuscous-gray);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-bold-white-26-4px {
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-bold-onyx-20px {
+  color: var(--onyx);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-13px-2 {
+  color: var(--indigo-2);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-white-14px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-indigo-17px {
+  color: var(--indigo);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-eerie-black-15px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-eerie-black-17px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-star-dust-12px {
+  color: var(--star-dust);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.worksans-semi-bold-white-17px {
+  color: var(--white);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  font-style: normal;
+}
+
