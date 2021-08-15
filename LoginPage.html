@@ -11,8 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="LoginCSS.css" />
-    <link rel="stylesheet" href="ani.html" />
-    <script src="loginC.js"></script>
+    <!-- <link rel="stylesheet" href="ani.html" /> -->
+    <script src="connection/loginC.js"></script>
   </head>
   <body>
     <div class="container-center-horizontal">
@@ -36,48 +36,23 @@
             먼저 로그인 부탁드려요
           </h1>
         </div>
-        <form action="connection/loginC.js" name="login_form">
+        <form action="" name="login_form" onsubmit="return false">
           <div class="view">
             <div class="overlap-group">
-              <input
-                class="phone-number worksans-semi-bold-white-15px"
-                name="userID"
-                placeholder="전화번호 Phone Number"
-                type="text"
-                required=""
-              />
+              <input class="phone-number worksans-semi-bold-white-15px" name="userID" placeholder="전화번호 Phone Number" type="text" required="" id="userID">
             </div>
           </div>
           <div class="view-1">
             <div class="overlap-group">
-              <input
-                class="password worksans-semi-bold-white-15px"
-                name="userPW"
-                placeholder="비밀번호 Password"
-                type="password"
-                required=""
-              />
+              <input class="password worksans-semi-bold-white-15px" name="userPW" placeholder="비밀번호 Password" type="password" required="" id="userPW">
             </div>
           </div>
-        <div
-          class="overlap-group1"
-          onclick="document.location.href = 'MainPage.html'"
-        >
-          <div class="view-2">
-            <div class="overlap-group2">
-              <div
-                class="text-1 valign-text-middle worksans-semi-bold-white-15px"
-              >
-                로그인
-              </div>
-            </div>
-          </div>
+        <div class="overlap-group1">
+        <!-- onclick="document.location.href = 'MainPage.html'" -->
+          <input type="submit" value="로그인" onclick="sendRequest()" class="view-2 overlap-group2" style="color: white;
+          font-family: Work Sans; font-size: 15px; font-weight: 600; font-style: normal; border: 0; outline: 0;">
+        </div>
         </form>
-          <div
-            class="text-5 valign-text-middle worksans-bold-quick-silver-15px"
-          >
-            비밀번호를 까먹으셨나요?
-          </div>
         </div>
       </div>
     </div>
