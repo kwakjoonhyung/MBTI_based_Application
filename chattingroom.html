@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="chatRoom.css" />
   </head>
   <body>
-    <div class="container-center-horizontal">
+    <div id="app" class="container-center-horizontal">
       <div class="iphone-11-pro-x-chattingpage screen">
         <div class="overlap-group1">
           <img
@@ -22,19 +22,11 @@
                   valign-text-middle
                   worksans-semi-bold-titan-white-15px
                 "
+                style="margin-top: 20px; width: auto; margin-left: 2px;"
               >
-                START Chatting :
+                시작시간! : 08/15 14:48
               </div>
-              <div
-                class="
-                  text-4
-                  valign-text-middle
-                  worksans-semi-bold-titan-white-15px
-                "
-              >
-                08/11 14:48
-              </div>
-              <h1 class="title valign-text-middle">NICKNAME</h1>
+              <h1 class="title valign-text-middle">{{this.roomName}}</h1>
             </div>
           </div>
           <div class="view">
@@ -44,15 +36,17 @@
             </div>
           </div>
         </div>
-        <div class="text-1 valign-text-middle worksans-semi-bold-tundora-16px">
-          Message 1 size middle
-        </div>
-        <div class="text-3 valign-text-middle worksans-semi-bold-tundora-16px">
-          Message 2 size longgggggg
-        </div>
-        <p class="text-2 valign-text-middle worksans-semi-bold-tundora-16px">
-          Message 1 size more longerrrrrrrrrrrrrrrrrrrrrrr<br />rrrrrrrrrrrrrrrr
-        </p>
+        <ul>
+          <li v-for="message in messages">
+
+              <dev class="text-1 valign-text-middle worksans-semi-bold-tundora-16px" v-if="isSender(message.sender)">
+              {{message.sender}} - {{message.message}}
+              </dev>
+              <dev class="text-2 valign-text-middle worksans-semi-bold-tundora-16px" v-else>
+                  {{message.sender}} - {{message.message}}
+              </dev>
+          </li>
+      </ul>
         <div class="overlap-group">
           <div class="view-1">
             <div class="rectangle-38"></div>
@@ -61,17 +55,89 @@
             <img
               class="arrow-1"
               src="https://cdn.animaapp.com/projects/610f8ec4126dcc83e7f1e082/releases/6119673cf0d518c1b84e449f/img/arrow-1@2x.svg"
-            />
-          </div>
-          <input
+              @click="sendMessage"
+              />
+          </div>          
+          <input style="margin-top: 25px;"
             class="message"
             name="message"
-            placeholder="키워드를 입력해주세요"
+            placeholder="두근두근! 대화를 시작해 보세요!"
             type="text"
             required=""
+            v-model="message" v-on:keypress.enter="sendMessage"
           />
         </div>
       </div>
     </div>
   </body>
 </html>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script>
+
+    var url = "http://localhost:8081"
+    var sock = new SockJS(url + "/ws-stomp");
+    var ws = Stomp.over(sock);
+    var reconnect = 0;
+
+    // vue.js
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            roomName: '',
+            roomId: '',
+            room: {},
+            sender: '',
+            message: '',
+            messages: []
+        },
+        created() {
+            var url = new URL(window.location.href);
+            
+            this.roomId = url.searchParams.get("roomId");
+            this.sender = url.searchParams.get("sender");
+            this.roomName = url.searchParams.get("roomName");
+            this.findRoom();
+        },
+        methods: {
+            findRoom: function() {
+                axios.get(url +'/api/chatroom/'+this.roomId).then(response => { this.room = response.data; });
+            },
+            sendMessage: function() {
+                ws.send("/pub/chat/message", {}, JSON.stringify({type:'TALK', roomId:this.roomId, sender:this.sender, message:this.message}));
+                this.message = '';
+            },
+            recvMessage: function(recv) {
+                this.messages.unshift({"type":recv.type,"sender":recv.type=='ENTER'?'[알림]':recv.sender,"message":recv.message})
+            },
+            isSender: function(sender) {
+                if(this.sender == sender) return true;
+                else false;
+            }
+        }
+    });
+    function connect() {
+        // pub/sub event
+        ws.connect({}, function(frame) {
+            ws.subscribe("/sub/chat/room/"+vm.$data.roomId, function(message) {
+                var recv = JSON.parse(message.body);
+                vm.recvMessage(recv);
+            });
+            ws.send("/pub/chat/message", {}, JSON.stringify({type:'ENTER', roomId:vm.$data.roomId, sender:vm.$data.sender}));
+        }, function(error) {
+            if(reconnect++ < 5) {
+                setTimeout(function() {
+                    // console.log("connection reconnect");
+                    sock = new SockJS("/ws-stomp");
+                    ws = Stomp.over(sock);
+                    connect();
+                },10*1000);
+            }
+        });
+    }
+    connect();
+</script>

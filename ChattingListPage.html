@@ -23,9 +23,9 @@
       </div>
       <div id=app style="margin-top: 8px">
       <ul class="list-group">
-        <li class="list-group-item list-group-item-action" v-for="(item,index) in chatrooms" v-bind:key="item.roomId" >
-            <div class="overlap-group" >
-              <div class="ellipse-18"></div>
+        <li class="list-group-item list-grou  p-item-action" v-for="(item,index) in chatrooms" v-bind:key="item.roomId" >
+            <div class="overlap-group" v-on:click="enterRoom(item.roomId, item.roomName)">
+              <img class="ellipse-18" src="https://anima-uploads.s3.amazonaws.com/projects/610a1d9ba7b7f96f7f9ae599/releases/61123fd5db03d99469d19773/img/ellipse-12@2x.png?v=1629064795942"></img>
               <div class="overlap-group-1">
                 <div class="nickname valign-text-middle worksans-semi-bo₩₩ld-eerie-black-17px">{{item.roomName}}</div>
                 <div class="text-message valign-text-middle worksans-semi-bold-gray-15px" v-if="inObj(item.roomId)">{{dictObj[item.roomId].message}}</div>
@@ -43,8 +43,8 @@
       <div class="view-1">
         <div class="overlap-group5" style="position: absolute; bottom: 0;">
           <div class="setting valign-text-middle worksans-bold-white-18px">SETTING</div>
-          <a href="ChattingListPage.html">><div class="chatting valign-text-middle worksans-bold-white-18px">CHATTING</div></a>
-          <a href="mainPage.html"></a><div class="finding valign-text-middle worksans-bold-white-18px">FINDING</div>
+          <a href="iphone-11-pro-x-chattinglistpage.html"><div class="chatting valign-text-middle worksans-bold-white-18px">CHATTING</div></a>
+          <div onClick="location.href='./mainPage.html'" class="finding valign-text-middle worksans-bold-white-18px">FINDING</div>
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@
   var sock_url = "ws://localhost:8081"
   var url = "http://localhost:8081"
   var userId = "c2ab87ef-db17-4b18-86d1-f9cb4c2eb5a8"
-  var userName = "군밤이"
+  var userName = "군밤장수 아덜"
   var sock = new SockJS(url+ "/ws-stomp");
   var ws = Stomp.over(sock);
   var reconnect = 0;
@@ -78,8 +78,7 @@
             }, "52f35526-2acf-4209-81e1-856f2887f0a6": {
               message: "",
               count: 0
-            }, 
-          
+            },
           
           },
         },
@@ -138,7 +137,7 @@
             if(reconnect++ < 5) {
                 setTimeout(function() {
                     console.log("connection reconnect");
-                    sock = new SockJS(sock_url+ "/ws-stomp");
+                    sock = new SockJS(url+ "/ws-stomp");
                     ws = Stomp.over(sock);
                     connect();
                 },10*1000);
@@ -151,7 +150,13 @@
             return true;
           }
           else return false;
+        },
+        enterRoom: function(roomId, roomName) {
+          if(this.userName != "") {
+              location.href="./chattingroom.html?roomId=" + roomId + "&sender=" + userName + "&roomName=" + roomName;
+            }
         }
         },
+        
     });   
 </script>
