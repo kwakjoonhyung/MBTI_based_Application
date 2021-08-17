@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 :root {
   --eerie-black: rgba(28, 28, 28, 1);
   --onyx: rgba(58, 58, 58, 1);
@@ -443,6 +447,7 @@
   background-color: var(--white);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 812px;
   width: 375px;
 }
@@ -454,7 +459,7 @@
   height: 133px;
   justify-content: flex-end;
   min-width: 375px;
-  padding: 17.2px 17px;
+  /* padding: 17.2px 17px; */
 }
 
 .iphone-11-pro-x-chattingpage .ellipse-19 {
@@ -572,7 +577,7 @@
 
 .iphone-11-pro-x-chattingpage .overlap-group {
   height: 64px;
-  margin-top: 415px;
+  /* margin-top: 415px; */
   position: relative;
   width: 375px;
 }
@@ -596,16 +601,17 @@
 }
 
 .iphone-11-pro-x-chattingpage .view-2 {
-  align-items: flex-start;
-  border: 1px solid #b1b0b0;
-  border-radius: 15px;
-  display: flex;
-  height: 30px;
-  left: 322px;
-  min-width: 30px;
-  padding: 10.8px 4.5px;
-  position: absolute;
-  top: 17px;
+  align-items: center;
+    border: 1px solid #b1b0b0;
+    border-radius: 15px;
+    display: flex;
+    height: 10px;
+    left: 315px;
+    min-width: 30px;
+    padding: 6.8px 0.5px;
+    position: absolute;
+    justify-content: center;
+    top: 42px;
 }
 
 .iphone-11-pro-x-chattingpage .arrow-1 {
