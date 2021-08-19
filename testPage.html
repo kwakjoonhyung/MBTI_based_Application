@@ -6,14 +6,15 @@
     <link rel="stylesheet" href="testpage.css" />
     <title>test Page</title>
     <script>
-      let E,
-        I,
-        S,
-        F,
-        P,
+      let E = 0,
+        I = 0,
+        S = 0,
+        F = 0,
+        P = 0,
         J = 0;
       function plus(Alpha, n) {
         Alpha = Alpha + n;
+        console.log(Alpha)
         return Alpha;
       }
       function changeColor(color) {
@@ -34,8 +35,7 @@
         </h1>
         <div class="overlap-group">
           <h3
-            onclick="changeColor('lightpink')"
-            onclick="plus(E, 1)"
+            onclick="changeColor('lightpink'), plus(E, 1)"
             class="text valign-text-middle worksans-bold-black-20px"
           >
             시험이 없는 대신 한 달마다<br />조별과제 2회, <br />발표과제 1회가
@@ -44,8 +44,7 @@
         </div>
         <div class="overlap-group-1">
           <h3
-            onclick="changeColor('lightpink')"
-            onclick="plus(I, -1)"
+            onclick="changeColor('lightpink'), plus(I, -1)"
             class="text valign-text-middle worksans-semi-bold-black-20px"
           >
             과제는 없지만 시험 범위가 <br />전공 책 한 권인 수업
@@ -60,8 +59,7 @@
         </h1>
         <div class="overlap-group">
           <h3
-            onclick="changeColor('lightpink')"
-            onclick="plus(I, -1)"
+            onclick="changeColor('lightpink'), plus(I, -1)"
             class="text valign-text-middle worksans-bold-black-20px"
           >
             뭐..? 힘들기만 해!<br />집에서 쉴래ㅎ
@@ -69,8 +67,7 @@
         </div>
         <div class="overlap-group-1">
           <h3
-            onclick="changeColor('lightpink')"
-            onclick="plus(E, 2)"
+            onclick="changeColor('lightpink'), plus(E, 2)"
             class="text valign-text-middle worksans-semi-bold-black-20px"
           >
             Mr시고 Tㅗ하자!!!<br />당장 모두 출발~!
@@ -86,8 +83,7 @@
         </h1>
         <div class="overlap-group">
           <h3
-            onclick="changeColor('lightpink')"
-            onclick="plus(T, 1)"
+            onclick="changeColor('lightpink'), plus(P, 1)"
             class="text valign-text-middle worksans-bold-black-20px"
           >
             담에 잘 보면 돼!<br />시험 끝났으니 술 마시쟝~
@@ -95,8 +91,7 @@
         </div>
         <div class="overlap-group-1">
           <h3
-            onclick="changeColor('lightpink')"
-            onclick="plus(T, -2)"
+            onclick="changeColor('lightpink'), plus(P, -2)"
             class="text valign-text-middle worksans-semi-bold-black-20px"
           >
             준비한 만큼 잘 안나와 아쉽겠다..<br />다른 시험은 꼭 잘보길 바라!
@@ -111,8 +106,7 @@
         </h1>
         <div class="overlap-group">
           <h3
-            onclick="changeColor('lightpink')"
-            onclick="plus(T, 2)"
+            onclick="changeColor('lightpink'), plus(P, 2)"
             class="text valign-text-middle worksans-bold-black-20px"
           >
             얼마나 팔았어?<br />너네과 돈 많이 벌었겠네!
@@ -120,8 +114,7 @@
         </div>
         <div class="overlap-group-1">
           <h3
-            onclick="changeColor('lightpink')"
-            onclick="plus(S, -1)"
+            onclick="changeColor('lightpink'), plus(S, -1)"
             class="text valign-text-middle worksans-semi-bold-black-20px"
           >
             헉 오늘 정말 덥던데,,<br />닭꼬치 파느라 고생했어..!
