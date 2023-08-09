@@ -1,8 +1,4 @@
-"# hackerton" 
-
-/* ani.html 은 화면 전환시 부드럽게 넘기기 위해서 넣은 건데 작동이 안됩니다잉*/
-
-*** 꼭 파일 이름 확인하기 ***
+# Hackerton
 
 1. 시작화면 : StartPage.html / StartCSS.css
 2. 로그인 화면 : LoginPage.html / LoginCSS.css
